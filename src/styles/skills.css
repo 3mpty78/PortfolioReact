@@ -1,0 +1,92 @@
+#skills {
+      position: relative;
+      height: 100vh;
+}
+.cards_container {
+      height: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-evenly;
+}
+.card {
+      width: 25%;
+      height: 40%;
+      padding: 15px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #363636;
+      backdrop-filter: blur(10px) brightness(1.2);
+      box-shadow: 0 0 20px #090909;
+      transform: translateY(50px);
+      opacity: 0;
+      transition: 1s 1s;
+}
+.card h3 {
+      margin: 0;
+      font-family: "Black";
+      font-size: 2em;
+      color: #00b4f8;
+}
+.card .border {
+      width: 100%;
+      height: 2px;
+      background: #e9ecef;
+}
+.card .technos {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      gap: 10px;
+      color: #e9ecef;
+}
+.card .icon {
+      width: 30px;
+      height: 30px;
+      color: white;
+      border-radius: 50%;
+      filter: invert(1);
+}
+.card p {
+      width: fit-content;
+      transition: 0.2s;
+      font-family: "Roboto";
+      font-weight: lighter;
+      font-size: 1.2em;
+
+      &:hover {
+            color: #00b4f8;
+      }
+}
+.canva {
+      background: url(../assets/icons/canva.png) no-repeat center/cover;
+}
+.photoshop {
+      background: url(../assets/icons/photoshop.png) no-repeat center/cover;
+}
+.illustrator {
+      background: url(../assets/icons/illustrator.png) no-repeat center/cover;
+}
+.html {
+      background: url(../assets/icons/html.png) no-repeat center/cover;
+}
+.css {
+      background: url(../assets/icons/css.png) no-repeat center/cover;
+}
+.javascript {
+      background: url(../assets/icons/javascript.png) no-repeat center/cover;
+}
+.react {
+      background: url(../assets/icons/react.png) no-repeat center/cover;
+}
+.node {
+      background: url(../assets/icons/node.png) no-repeat center/cover;
+}
+
+.card.visible {
+      transform: translateY(0);
+      opacity: 1;
+}

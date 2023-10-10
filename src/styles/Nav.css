@@ -1,0 +1,37 @@
+#nav {
+      height: 4em;
+      width: 50%;
+      position: absolute;
+      left: 50%;
+      top: 20px;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+}
+#nav ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+}
+#nav ul li {
+      list-style-type: none;
+}
+#nav ul li a {
+      color: #e9ecef;
+      text-decoration: none;
+      font-family: "Roboto";
+      font-size: 1.2em;
+}
+#underline {
+      width: 0;
+      margin-top: 5px;
+      height: 1px;
+      background: #00b4f8;
+      transition: 0.4s;
+}
+
+li:hover #underline {
+      width: 100%;
+}

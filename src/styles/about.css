@@ -1,0 +1,44 @@
+#about {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+}
+#about .about_container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-evenly;
+}
+#about .about_container p {
+      width: 45%;
+      padding: 20px;
+      height: fit-content;
+      text-align: justify;
+      font-size: 1.5vw;
+      font-weight: lighter;
+      line-height: 1.8em;
+      color: #e9ecef;
+      transform: translateY(50%);
+      opacity: 0;
+      transition: 1s;
+}
+#about p span {
+      color: #00b4f8;
+}
+#about img {
+      transform: translateY(50%);
+      opacity: 0;
+      transition: 1s 0.4s;
+      filter: drop-shadow(0 0 10px #000000);
+}
+
+/* Classe pour l'élément visible */
+#about .about_container p.visible,
+#about img.visible {
+      transform: translateY(0);
+      opacity: 1;
+}

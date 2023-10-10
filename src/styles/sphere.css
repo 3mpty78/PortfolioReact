@@ -1,0 +1,25 @@
+/* CursorSphere.css */
+.cursor-sphere {
+      width: 500px;
+      height: 500px;
+      background-color: hsl(196, 100%, 49%);
+      filter: blur(150px) opacity(0.2);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: background-color 0.4s ease, filter 0.2s ease-out,
+            transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#sphere.purple {
+      background-color: hsl(271, 76%, 53%);
+      filter: blur(150px) opacity(0.2);
+}
+#sphere.orange {
+      background-color: hsl(16, 100%, 50%);
+      filter: blur(150px) opacity(0.2);
+}
+#sphere.grey {
+      background-color: hsl(210, 16%, 93%);
+      filter: blur(150px) opacity(0.2);
+}
