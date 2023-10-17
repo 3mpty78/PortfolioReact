@@ -9,7 +9,10 @@ export default function Socials() {
       return (
             <div id="socials">
                   <article className="insta">
-                        <a href="#socials">
+                        <a
+                              href="https://www.instagram.com/cursed_aure/"
+                              target="_blank"
+                              rel="noreferrer">
                               <img src={insta} alt="Instagram icon" />
                               <div className="textWrap">
                                     <h3>Me suivre sur Instagram</h3>
@@ -17,7 +20,10 @@ export default function Socials() {
                         </a>
                   </article>
                   <article className="github">
-                        <a href="#socials">
+                        <a
+                              href="https://github.com/3mpty78"
+                              target="_blank"
+                              rel="noreferrer">
                               <img src={github} alt="Github icon" />
                               <div className="textWrap">
                                     <h3>Me suivre sur Github</h3>
@@ -25,7 +31,10 @@ export default function Socials() {
                         </a>
                   </article>
                   <article className="linkedin">
-                        <a href="#socials">
+                        <a
+                              href="https://www.linkedin.com/in/aurelien-corre-a229461b3/"
+                              target="_blank"
+                              rel="noreferrer">
                               <img src={linkedin} alt="Linkedin icon" />
                               <div className="textWrap">
                                     <h3>Me suivre sur Linkedin</h3>

@@ -24,6 +24,11 @@ export default function Home() {
                               src={contact_text}
                               alt="me contacter"
                               className="contact-text"
+                              style={{
+                                    transform: `rotate(${
+                                          textPositionX / 15
+                                    }deg)`,
+                              }}
                         />
                   </a>
                   <h1 style={{ transform: `translateX(${textPositionX}px)` }}>

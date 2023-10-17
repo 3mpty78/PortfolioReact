@@ -29,11 +29,12 @@
       width: 150px;
       bottom: 20px;
       right: 20px;
-      animation: rotate 10s linear infinite;
+      border: 3px dotted rgba(245, 245, 245, 0.404);
+      padding: 5px;
       border-radius: 50%;
-}
-#home .contact-text:hover {
-      animation-play-state: paused;
+      backdrop-filter: blur(5px);
+      transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.75);
+      z-index: 2;
 }
 
 @keyframes rotate {
