@@ -15,7 +15,9 @@ export default function Socials() {
                               rel="noreferrer">
                               <img src={insta} alt="Instagram icon" />
                               <div className="textWrap">
-                                    <h3>Me suivre sur Instagram</h3>
+                                    <h3>
+                                          Me suivre sur <span>Instagram</span>
+                                    </h3>
                               </div>
                         </a>
                   </article>
@@ -26,7 +28,9 @@ export default function Socials() {
                               rel="noreferrer">
                               <img src={github} alt="Github icon" />
                               <div className="textWrap">
-                                    <h3>Me suivre sur Github</h3>
+                                    <h3>
+                                          Me suivre sur <span>Github</span>
+                                    </h3>
                               </div>
                         </a>
                   </article>
@@ -37,7 +41,9 @@ export default function Socials() {
                               rel="noreferrer">
                               <img src={linkedin} alt="Linkedin icon" />
                               <div className="textWrap">
-                                    <h3>Me suivre sur Linkedin</h3>
+                                    <h3>
+                                          Me suivre sur <span>Linkedin</span>
+                                    </h3>
                               </div>
                         </a>
                   </article>

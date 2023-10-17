@@ -127,6 +127,10 @@
 
                                     & h3 {
                                           font-weight: 400;
+
+                                          & span {
+                                                color: #00b4f8;
+                                          }
                                     }
                               }
                         }
