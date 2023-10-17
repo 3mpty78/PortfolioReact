@@ -29,6 +29,10 @@ export default function Form() {
                   email: "",
                   message: "",
             });
+
+            console.log(formData);
+
+            alert("Mail envoyé !");
       };
 
       return (
