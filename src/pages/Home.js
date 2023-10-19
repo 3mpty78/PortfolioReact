@@ -16,6 +16,7 @@ export default function Home() {
       }, []);
 
       const textPositionX = -scrollY;
+      const textPositionY = -scrollY;
 
       return (
             <div id="home">
@@ -31,9 +32,18 @@ export default function Home() {
                               }}
                         />
                   </a>
-                  <h1 style={{ transform: `translateX(${textPositionX}px)` }}>
+                  <h1
+                        style={{
+                              transform: `translateX(${textPositionX / 2}px)`,
+                        }}>
                         corre <span>aurélien</span>
                   </h1>
+                  <h2
+                        style={{
+                              transform: `translateY(${textPositionY / 3}px)`,
+                        }}>
+                        Développeur web <span>Front-end</span>
+                  </h2>
                   <img
                         className="tronche"
                         src={memoji}

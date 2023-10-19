@@ -37,7 +37,7 @@
 
                   & article {
                         padding: 10px;
-                        margin: 0;
+                        margin: 0 100px 0 0;
                         display: flex;
                         flex-wrap: nowrap;
                         gap: 100px;
@@ -45,8 +45,9 @@
                         & .tech {
                               display: flex;
                               align-items: center;
-                              gap: 15px;
+                              justify-content: space-between;
                               padding: 15px;
+                              gap: 15px;
 
                               & img {
                                     width: 30px;

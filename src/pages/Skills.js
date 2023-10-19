@@ -12,7 +12,7 @@ import react from "../assets/icons/tech/react.svg";
 import node from "../assets/icons/tech/node.svg";
 
 export default function Skills() {
-      const articles = document.querySelectorAll("article");
+      const articles = document.querySelectorAll(" #skills article");
 
       articles.forEach((item) => {
             item.innerHTML += item.innerHTML;
