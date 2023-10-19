@@ -34,7 +34,12 @@ export default function Home() {
                   <h1 style={{ transform: `translateX(${textPositionX}px)` }}>
                         corre <span>aurélien</span>
                   </h1>
-                  <img src={memoji} alt="memoji" width={350} />
+                  <img
+                        className="tronche"
+                        src={memoji}
+                        alt="memoji"
+                        width={350}
+                  />
             </div>
       );
 }
