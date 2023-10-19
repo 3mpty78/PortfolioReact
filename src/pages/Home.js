@@ -40,7 +40,7 @@ export default function Home() {
                   </h1>
                   <h2
                         style={{
-                              transform: `translateY(${textPositionY / 3}px)`,
+                              transform: `translateY(${textPositionY / 6}px)`,
                         }}>
                         Développeur web <span>Front-end</span>
                   </h2>
