@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const cards = [
       {
@@ -16,34 +16,12 @@ const cards = [
 ];
 
 export default function Skills() {
-      const [isVisible, setIsVisible] = useState(false);
-
-      useEffect(() => {
-            // Fonction de gestionnaire de défilement
-            const handleScroll = () => {
-                  const element = document.getElementById("about");
-                  const elementPosition = element.getBoundingClientRect().top;
-                  const isVisible = elementPosition < window.innerHeight;
-                  setIsVisible(isVisible);
-            };
-
-            window.addEventListener("scroll", handleScroll);
-            handleScroll();
-            return () => {
-                  window.removeEventListener("scroll", handleScroll);
-            };
-      }, []);
-
       return (
             <div id="skills">
                   <h2>Skills</h2>
                   <div className="cards_container">
                         {cards.map((card, index) => (
-                              <div
-                                    className={`card ${
-                                          isVisible ? "visible" : ""
-                                    }`}
-                                    id={`card ${index}`}>
+                              <div className={`card`} id={`card ${index}`}>
                                     <h3>{card.name}</h3>
                                     <div className="border"></div>
                                     <div className="technos">

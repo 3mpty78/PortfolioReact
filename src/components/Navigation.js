@@ -1,6 +1,6 @@
 import React from "react";
 
-const menu = ["Qui suis-je ?", "Mes projets", "Skills", "Me contacter"];
+const menu = ["Mes projets", "Skills", "Me contacter"];
 
 export default function Navigation() {
       return (
@@ -11,12 +11,10 @@ export default function Navigation() {
                                     <a
                                           href={
                                                 index === 0
-                                                      ? "#about"
-                                                      : index === 1
                                                       ? "#projects"
-                                                      : index === 2
+                                                      : index === 1
                                                       ? "#skills"
-                                                      : index === 3
+                                                      : index === 2
                                                       ? "#contact"
                                                       : "#home"
                                           }>

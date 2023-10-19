@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "../components/Slider";
+// import Slider from "../components/Slider";
 
 export default function Projects() {
       return (
@@ -7,7 +7,6 @@ export default function Projects() {
                   <h2>
                         Quelques-uns de mes <span>projets</span>
                   </h2>
-                  <Slider />
             </div>
       );
 }

@@ -26,7 +26,7 @@
 }
 #home .contact-text {
       position: fixed;
-      width: 150px;
+      width: 120px;
       bottom: 20px;
       right: 20px;
       border: 3px dotted rgba(245, 245, 245, 0.404);
