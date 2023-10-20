@@ -85,6 +85,7 @@
                   position: relative;
                   border-radius: 15px;
                   overflow: hidden;
+                  box-shadow: 0 0 20px black;
 
                   & img {
                         width: 100%;
