@@ -1,2 +1,2 @@
 # PortfolioReact
-My portfolio, but with React.
+My portfolio, but using React.
