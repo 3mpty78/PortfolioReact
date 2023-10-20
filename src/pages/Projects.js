@@ -87,8 +87,9 @@ export default function Projects() {
       return (
             <div id="projects">
                   <h2>
-                        Quelques-uns de mes <span>projets</span>
+                        Quelques <span>projets</span>
                   </h2>
+                  <div id="underline"></div>
                   {projects.map((item, index) => (
                         <article key={index}>
                               <div className="text-container">

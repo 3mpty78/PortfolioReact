@@ -4,6 +4,20 @@
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
+      align-items: center;
+      gap: 100px;
+
+      & #underline {
+            width: 0;
+            margin-top: -115px;
+            height: 1px;
+            background: #e9ecef;
+            transition: 0.4s;
+      }
+
+      &:hover #underline {
+            width: 25%;
+      }
 
       & .contactContainer {
             height: 50%;
@@ -126,10 +140,12 @@
                                     padding-left: 25px;
 
                                     & h3 {
-                                          font-weight: 400;
+                                          font-weight: lighter;
+                                          font-size: 20px;
 
                                           & span {
                                                 color: #00b4f8;
+                                                font-family: "newyork";
                                           }
                                     }
                               }

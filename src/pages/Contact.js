@@ -8,6 +8,7 @@ export default function Contact() {
                   <h2>
                         Me <span>contacter</span>
                   </h2>
+                  <div id="underline"></div>
                   <div className="contactContainer">
                         <Form />
                         <Socials />

@@ -37,17 +37,20 @@
       }
 
       & h2 {
-            font-family: "black";
-            font-size: 26px;
+            position: absolute;
             top: 75%;
+            font-family: "newyork";
+            font-weight: lighter;
+            font-size: 2em;
             left: unset;
             border: none;
             text-transform: unset;
+            color: #e9ecef;
             transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.75);
 
             & span {
-                  color: transparent;
-                  -webkit-text-stroke: 1px #00b4f8;
+                  color: #00b4f8;
+                  font-size: inherit;
             }
       }
 
