@@ -42,7 +42,7 @@ export default function Home() {
                         style={{
                               transform: `translateY(${textPositionY / 6}px)`,
                         }}>
-                        Développeur web <span>front-end</span>
+                        Développeur web front-end
                   </h2>
                   <img
                         className="tronche"

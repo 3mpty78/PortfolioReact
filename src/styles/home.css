@@ -12,7 +12,7 @@
             width: 120px;
             bottom: 20px;
             right: 20px;
-            border: 3px dotted rgba(245, 245, 245, 0.404);
+            border: 2px solid rgba(245, 245, 245, 0.404);
             padding: 5px;
             border-radius: 50%;
             backdrop-filter: blur(5px);
@@ -37,6 +37,10 @@
       }
 
       & h2 {
+            color: transparent;
+            background: linear-gradient(to right, #e9ecef, #e9ecef69);
+            background-clip: text;
+
             position: absolute;
             top: 75%;
             font-family: "newyork";
@@ -45,13 +49,7 @@
             left: unset;
             border: none;
             text-transform: unset;
-            color: #e9ecef;
             transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.75);
-
-            & span {
-                  color: #00b4f8;
-                  font-size: inherit;
-            }
       }
 
       & img {
