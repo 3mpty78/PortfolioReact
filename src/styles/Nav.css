@@ -1,6 +1,5 @@
 #nav {
       height: 4em;
-      width: 25%;
       position: absolute;
       left: 50%;
       top: 25px;
@@ -12,7 +11,8 @@
 #nav ul {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 50px;
       padding: 0;
 }
 #nav ul li {
