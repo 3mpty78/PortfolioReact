@@ -64,7 +64,7 @@ const projects = [
             description:
                   " Tattoo Roulette sera une application web et une application mobile regroupant des conseils sur le tatouage et où il sera possible de générer un motif aléatoire en fonction d'un style choisi. Cette application sera créée en collaboration avec des artistes tatoueurs.",
             link: "",
-            linkName: "En construction",
+            linkName: "En cours de développement",
             imageURL: tattoo,
             technos: [
                   {
@@ -95,17 +95,21 @@ export default function Projects() {
                               <div className="text-container">
                                     <h3>{item.title}</h3>
                                     <p>{item.description}</p>
-                                    <a
-                                          href={item.link}
-                                          target="_blank"
-                                          rel="noreferrer">
+                                    <button
+                                          onClick={() => {
+                                                window.open(
+                                                      item.link,
+                                                      "_blank"
+                                                );
+                                          }}
+                                          disabled={index !== 2 ? false : true}>
                                           {item.linkName}
-                                    </a>
+                                    </button>
                               </div>
                               <div className="image-container">
                                     <a
-                                          href={item.link}
-                                          target="_blank"
+                                          href={index !== 2 ? item.link : ""}
+                                          target={index !== 2 ? "_blank" : ""}
                                           rel="noreferrer">
                                           <img src={item.imageURL} alt="" />
                                           <div className="technos-container">
