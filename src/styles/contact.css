@@ -59,10 +59,10 @@
                   }
 
                   & button {
-                        width: 8em;
-                        height: 35px;
-                        border-radius: 15px;
+                        border-radius: 5px;
                         margin: 20px 0;
+                        padding: 10px 30px;
+                        font-family: "comfortaa";
                         outline: none;
                         border: 1px solid #00b4f8;
                         background: transparent;

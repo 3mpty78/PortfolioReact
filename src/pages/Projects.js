@@ -18,7 +18,7 @@ const projects = [
       {
             title: "Baudic Taxis",
             description:
-                  "Site vitrine pour la compagnie de taxis d'un ami basée à Plouzane en Bretagne..",
+                  "Site vitrine pour une compagnie de taxis basée à Plouzane en Bretagne.",
             link: "https://3mpty78.github.io/Baudic-taxis/",
             linkName: "Visiter le site",
             imageURL: taxis,
@@ -40,7 +40,7 @@ const projects = [
       {
             title: "Blindtester",
             description:
-                  "Bot Discord utilisé pour jouer au blindtest avec des paroles de chansons. J'ai codé ce bot avec la librairie discord.js de Node.js pour le serveur Discord d'un rappeur Français.",
+                  "Bot Discord utilisé pour jouer au blindtest avec des paroles de chansons. J'ai codé ce bot avec la librairie discord.js de Node.js pour les serveurs Discord de deux rappeurs Français.",
             link: "https://github.com/3mpty78/Blindtester",
             linkName: "Voir le code source",
             imageURL: bot,
@@ -94,21 +94,41 @@ export default function Projects() {
                               <div className="text-container">
                                     <h3>{item.title}</h3>
                                     <p>{item.description}</p>
-                                    <a href={item.link}>{item.linkName}</a>
+                                    <a
+                                          href={item.link}
+                                          target="_blank"
+                                          rel="noreferrer">
+                                          {item.linkName}
+                                    </a>
                               </div>
                               <div className="image-container">
-                                    <img src={item.imageURL} alt="" />
-                                    {item.technos.map((tech, index) => (
-                                          <div key={index} className="technos">
-                                                <span className="tech">
-                                                      <img
-                                                            src={tech.icon}
-                                                            alt=""
-                                                      />
-                                                      <p>{tech.name}</p>
-                                                </span>
+                                    <a
+                                          href={item.link}
+                                          target="_blank"
+                                          rel="noreferrer">
+                                          <img src={item.imageURL} alt="" />
+                                          <div className="technos-container">
+                                                {item.technos.map(
+                                                      (tech, index) => (
+                                                            <span
+                                                                  key={index}
+                                                                  className="tech">
+                                                                  <img
+                                                                        src={
+                                                                              tech.icon
+                                                                        }
+                                                                        alt=""
+                                                                  />
+                                                                  <p>
+                                                                        {
+                                                                              tech.name
+                                                                        }
+                                                                  </p>
+                                                            </span>
+                                                      )
+                                                )}
                                           </div>
-                                    ))}
+                                    </a>
                               </div>
                         </article>
                   ))}
