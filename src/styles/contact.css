@@ -1,9 +1,9 @@
 #contact {
       position: relative;
-      height: 100vh;
+      height: auto;
+      margin: 25px 0;
       display: flex;
       flex-flow: column nowrap;
-      justify-content: center;
       align-items: center;
       gap: 100px;
 
@@ -149,6 +149,86 @@
                                           }
                                     }
                               }
+                        }
+                  }
+            }
+      }
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+      #contact {
+            & .contactContainer {
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+
+                  & form {
+                        width: 100%;
+
+                        & label {
+                              font-size: 1.2em;
+                        }
+                  }
+
+                  & #socials {
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 50px;
+                        margin-top: 100px;
+
+                        & .insta {
+                              width: fit-content;
+
+                              & img {
+                                    width: 30px;
+                                    height: 30px;
+                              }
+
+                              & .textWrap {
+                                    display: none;
+                              }
+                        }
+                        & .github {
+                              width: fit-content;
+
+                              & img {
+                                    width: 30px;
+                                    height: 30px;
+                              }
+
+                              & .textWrap {
+                                    display: none;
+                              }
+                        }
+                        & .linkedin {
+                              width: fit-content;
+
+                              & img {
+                                    width: 30px;
+                                    height: 30px;
+                              }
+
+                              & .textWrap {
+                                    display: none;
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+/* Mobile */
+@media screen and (max-width: 750px) {
+      #contact {
+            & .contactContainer {
+                  & form {
+                        & label {
+                              width: 75%;
+                        }
+                        & input,
+                        textarea {
+                              width: 75%;
                         }
                   }
             }
