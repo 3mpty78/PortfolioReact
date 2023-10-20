@@ -21,7 +21,7 @@ app.post("/envoyer-email", (req, res) => {
 
             // Création du transporter nodemailer
             const transporter = nodemailer.createTransport({
-                  service: "Gmail",
+                  service: "Outlook",
                   auth: {
                         user: process.env.EMAIL,
                         pass: process.env.PASSWORD,
