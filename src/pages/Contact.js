@@ -1,5 +1,4 @@
 import React from "react";
-import Form from "../components/Form";
 import Socials from "../components/Socials";
 
 export default function Contact() {
@@ -10,7 +9,6 @@ export default function Contact() {
                   </h2>
                   <div id="underline"></div>
                   <div className="contactContainer">
-                        <Form />
                         <Socials />
                   </div>
             </div>

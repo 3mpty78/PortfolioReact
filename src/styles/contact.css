@@ -1,15 +1,13 @@
 #contact {
       position: relative;
       height: auto;
-      margin: 25px 0;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      gap: 100px;
+      padding: 50px 0;
 
       & #underline {
             width: 0;
-            margin-top: -115px;
             height: 1px;
             background: #e9ecef;
             transition: 0.4s;
@@ -26,128 +24,35 @@
             flex-flow: row wrap;
             justify-content: center;
 
-            /* Formulaire */
-
-            & form {
-                  width: 60%;
-                  height: 100%;
-                  display: flex;
-                  flex-flow: column nowrap;
-                  align-items: center;
-                  justify-content: center;
-
-                  & label {
-                        font-size: 1.5em;
-                        padding: 15px 0;
-                        color: #e9ecef;
-                        text-align: left;
-                        width: 50%;
-                  }
-
-                  & input,
-                  textarea {
-                        width: 50%;
-                        padding: 10px;
-                        outline: none;
-                        border-radius: 15px;
-                        border: 1px solid #363636;
-                        backdrop-filter: blur(2px) brightness(1.2);
-                        box-shadow: 0 0 20px #090909;
-                        background: transparent;
-                        transition: border 0.2s ease;
-                        color: #e9ecef;
-                        font-size: 16px;
-                        font-family: "comfortaa";
-
-                        &:focus {
-                              border: 1px solid #00b4f8;
-                        }
-                  }
-
-                  & input {
-                        height: 3em;
-                  }
-
-                  & textarea {
-                        height: 9em;
-                  }
-
-                  & button {
-                        border-radius: 5px;
-                        margin: 20px 0;
-                        padding: 10px 30px;
-                        font-family: "comfortaa";
-                        outline: none;
-                        border: 1px solid #00b4f8;
-                        background: transparent;
-                        backdrop-filter: blur(2px) brightness(1.2);
-                        color: #00b4f8;
-                        transition: 0.2s;
-                        cursor: pointer;
-
-                        &:hover {
-                              background: #00b4f8;
-                              color: #e9ecef;
-                        }
-                        &:active {
-                              background: #005574;
-                              scale: 0.9;
-                        }
-                  }
-            }
-
             /* Cartes réseaux sociaux */
 
             & #socials {
-                  width: 30%;
+                  width: 50%;
+                  margin: 100px 0;
                   display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  gap: 25px;
+                  flex-direction: row;
+                  justify-content: space-evenly;
 
                   & article {
                         position: relative;
                         display: flex;
                         align-items: center;
-                        width: 100%;
-                        height: 100px;
 
                         & a {
                               text-decoration: none;
-                              width: 75%;
+                              width: 100%;
                               display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
                               color: #e9ecef;
                               transition: 0.2s;
-
-                              &:hover {
-                                    color: #00b4f8;
-                                    padding-left: 10px;
-                              }
 
                               & img {
                                     width: 50px;
                                     height: 50px;
                                     object-fit: cover;
                                     filter: invert(1);
-                              }
-
-                              & .textWrap {
-                                    display: flex;
-                                    align-items: center;
-                                    border-radius: 0 15px 15px 0;
-                                    width: 50%;
-                                    height: 50px;
-                                    padding-left: 25px;
-
-                                    & h3 {
-                                          font-weight: lighter;
-                                          font-size: 20px;
-
-                                          & span {
-                                                color: #00b4f8;
-                                                font-family: "newyork";
-                                          }
-                                    }
                               }
                         }
                   }
@@ -162,14 +67,6 @@
                   flex-direction: column;
                   justify-content: center;
                   align-items: center;
-
-                  & form {
-                        width: 100%;
-
-                        & label {
-                              font-size: 1.2em;
-                        }
-                  }
 
                   & #socials {
                         flex-direction: row;
@@ -221,6 +118,12 @@
 /* Mobile */
 @media screen and (max-width: 750px) {
       #contact {
+            & #underline {
+                  width: 75%;
+            }
+            &:hover #underline {
+                  width: 75%;
+            }
             & .contactContainer {
                   & form {
                         & label {

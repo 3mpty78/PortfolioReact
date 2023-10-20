@@ -14,11 +14,6 @@ export default function Socials() {
                               target="_blank"
                               rel="noreferrer">
                               <img src={insta} alt="Instagram icon" />
-                              <div className="textWrap">
-                                    <h3>
-                                          Me suivre sur <span>Instagram</span>
-                                    </h3>
-                              </div>
                         </a>
                   </article>
                   <article className="github">
@@ -27,11 +22,6 @@ export default function Socials() {
                               target="_blank"
                               rel="noreferrer">
                               <img src={github} alt="Github icon" />
-                              <div className="textWrap">
-                                    <h3>
-                                          Me suivre sur <span>Github</span>
-                                    </h3>
-                              </div>
                         </a>
                   </article>
                   <article className="linkedin">
@@ -40,11 +30,6 @@ export default function Socials() {
                               target="_blank"
                               rel="noreferrer">
                               <img src={linkedin} alt="Linkedin icon" />
-                              <div className="textWrap">
-                                    <h3>
-                                          Me suivre sur <span>Linkedin</span>
-                                    </h3>
-                              </div>
                         </a>
                   </article>
             </div>

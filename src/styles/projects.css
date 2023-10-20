@@ -183,6 +183,10 @@
 
 @media screen and (max-width: 750px) {
       #projects {
+            & #underline {
+                  display: none;
+            }
+
             & article {
                   height: auto;
                   flex-direction: column;
