@@ -1,39 +1,34 @@
 import React from "react";
 
 // Import des images
-import taxis from "../assets/img/taxi.webp";
+import jeunepauvre from "../assets/img/jeunepauvre.png";
 import bot from "../assets/img/robot.webp";
 import tattoo from "../assets/img/tattoo.webp";
 
 // Import des icons
-import html from "../assets/icons/tech/html.svg";
 import css from "../assets/icons/tech/css.svg";
-import js from "../assets/icons/tech/js.svg";
 import node from "../assets/icons/tech/node.svg";
 import discord from "../assets/icons/tech/discord.svg";
 import mongo from "../assets/icons/tech/mongo.svg";
 import react from "../assets/icons/tech/react.svg";
+import sass from "../assets/icons/tech/sass.svg";
 
 const projects = [
       {
-            title: "Baudic Taxis",
+            title: "Yung Poor Alo",
             description:
-                  "Site vitrine pour une compagnie de taxis basée à Plouzane en Bretagne.",
-            link: "https://3mpty78.github.io/Baudic-taxis/",
+                  "Site affichant l'actualité du rappeur YUNG POOR ALO. Ce site n'est pas le site officiel de l'artiste.",
+            link: "https://jeunepauvre.vercel.app",
             linkName: "Visiter le site",
-            imageURL: taxis,
+            imageURL: jeunepauvre,
             technos: [
                   {
-                        name: "html",
-                        icon: html,
+                        name: "React JS",
+                        icon: react,
                   },
                   {
-                        name: "css",
-                        icon: css,
-                  },
-                  {
-                        name: "javascript",
-                        icon: js,
+                        name: "sass",
+                        icon: sass,
                   },
             ],
       },
