@@ -6,7 +6,6 @@ import bot from "../assets/img/robot.webp";
 import tattoo from "../assets/img/tattoo.webp";
 
 // Import des icons
-import css from "../assets/icons/tech/css.svg";
 import node from "../assets/icons/tech/node.svg";
 import discord from "../assets/icons/tech/discord.svg";
 import mongo from "../assets/icons/tech/mongo.svg";
