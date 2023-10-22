@@ -44,9 +44,16 @@
                   justify-content: space-evenly;
 
                   & h3 {
-                        font-family: "black";
-                        font-size: 28px;
-                        color: #e9ecef;
+                        font-family: "newyork";
+                        font-size: 32px;
+                        font-weight: lighter;
+                        color: transparent;
+                        background: linear-gradient(
+                              to right,
+                              #dedede 25%,
+                              #e9ecef6c
+                        );
+                        background-clip: text;
                   }
 
                   & p {
@@ -93,7 +100,7 @@
                   position: relative;
                   border-radius: 15px;
                   overflow: hidden;
-                  box-shadow: 0 0 20px black;
+                  box-shadow: 0 0 20px #060606;
 
                   & img {
                         width: 100%;
@@ -111,7 +118,7 @@
                         justify-content: space-evenly;
                         background: linear-gradient(
                               to top,
-                              #060606 15%,
+                              #101010 15%,
                               transparent
                         );
                         transition: 0.4s ease-out;

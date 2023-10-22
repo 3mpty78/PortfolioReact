@@ -24,7 +24,7 @@
             font-family: "black";
             text-transform: uppercase;
             position: absolute;
-            color: #e9ecef;
+            color: #dedede;
             font-size: 8vw;
             letter-spacing: 10px;
             word-spacing: 50px;
@@ -38,7 +38,7 @@
 
       & h2 {
             color: transparent;
-            background: linear-gradient(to right, #e9ecef, #e9ecef69);
+            background: linear-gradient(to right, #dedede 25%, #e9ecef6c);
             background-clip: text;
 
             position: absolute;
