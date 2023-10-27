@@ -1,120 +1,121 @@
 #home {
-      position: relative;
-      height: 100vh;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      justify-content: center;
-      overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
 
-      & .contact-text {
-            position: fixed;
-            width: 120px;
-            bottom: 20px;
-            right: 20px;
-            border: 2px solid rgba(245, 245, 245, 0.404);
-            padding: 5px;
-            border-radius: 50%;
-            backdrop-filter: blur(5px);
-            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.75);
-            z-index: 2;
-      }
+    & .contact-text {
+        position: fixed;
+        width: 100px;
+        bottom: 20px;
+        right: 20px;
+        border: 2px solid rgba(245, 245, 245, 0.404);
+        padding: 5px;
+        border-radius: 50%;
+        backdrop-filter: blur(5px);
+        transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.75);
+        z-index: 2;
+    }
 
-      & h1 {
-            font-family: "black";
-            text-transform: uppercase;
-            position: absolute;
-            color: #dedede;
-            font-size: 8vw;
-            letter-spacing: 10px;
-            word-spacing: 50px;
-            transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.75);
+    & h1 {
+        font-family: Against;
+        text-transform: uppercase;
+        position: absolute;
+        color: #dedede;
+        font-size: 6vw;
+        font-weight: lighter;
+        letter-spacing: 10px;
+        word-spacing: 50px;
+        transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.75);
 
-            & span {
-                  color: transparent;
-                  -webkit-text-stroke: 2px hsl(196, 100%, 49%);
-            }
-      }
+        & span {
+            color: #00b4f8;
+            /* -webkit-text-stroke: 2px hsl(196, 100%, 49%); */
+        }
+    }
 
-      & h2 {
-            color: transparent;
-            background: linear-gradient(to right, #dedede 25%, #e9ecef6c);
-            background-clip: text;
+    & h2 {
+        color: transparent;
+        background: linear-gradient(to right, #dedede 25%, #e9ecef6c);
+        background-clip: text;
 
-            position: absolute;
-            top: 75%;
-            font-family: "newyork";
-            font-weight: lighter;
-            font-size: 2em;
-            left: unset;
-            border: none;
-            text-transform: unset;
-            transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.75);
-      }
+        position: absolute;
+        top: 75%;
+        font-family: Against;
+        font-weight: lighter;
+        font-size: 1.5em;
+        left: unset;
+        border: none;
+        text-transform: unset;
+        transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.75);
+    }
 
-      & img {
-            filter: drop-shadow(0 0 15px black);
-      }
+    & img {
+        filter: drop-shadow(0 0 15px black);
+    }
 
-      & .tronche {
-            animation: gravity 1.2s ease-in-out infinite;
-      }
+    & .tronche {
+        animation: gravity 1.2s ease-in-out infinite;
+    }
 }
 
 /* Animation visage*/
 @keyframes gravity {
-      0%,
-      100% {
-            transform: translateY(-10px) rotateX(10deg);
-      }
-      50% {
-            transform: translateY(10px) rotateX(-15deg);
-      }
+    0%,
+    100% {
+        transform: translateY(-10px) rotateX(10deg);
+    }
+    50% {
+        transform: translateY(10px) rotateX(-15deg);
+    }
 }
 
 /* Responsive */
 @media screen and (max-width: 900px) {
-      #home {
-            & h2 {
-                  font-size: 1.5em;
-            }
+    #home {
+        & h2 {
+            font-size: 1.5em;
+        }
 
-            & .contact-text {
-                  width: 80px;
-            }
+        & .contact-text {
+            width: 80px;
+        }
 
-            & .tronche {
-                  width: 15em;
-            }
-      }
+        & .tronche {
+            width: 15em;
+        }
+    }
 }
 
 @media screen and (max-width: 750px) {
-      #home {
-            & h1 {
-                  position: relative;
-                  text-align: center;
-                  width: 75%;
-            }
-      }
+    #home {
+        & h1 {
+            position: relative;
+            text-align: center;
+            width: 75%;
+        }
+    }
 }
 
 @media screen and (max-width: 650px) {
-      #home {
-            & h2 {
-                  font-size: 1.5em;
-            }
+    #home {
+        & h2 {
+            font-size: 1.5em;
+        }
 
-            & .contact-text {
-                  width: 80px;
-            }
-      }
+        & .contact-text {
+            width: 80px;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
-      #home {
-            & .contact-text {
-                  width: 50px;
-            }
-      }
+    #home {
+        & .contact-text {
+            width: 50px;
+        }
+    }
 }

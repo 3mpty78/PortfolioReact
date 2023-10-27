@@ -7,45 +7,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 
 @font-face {
-      font-family: "black";
-      src: url(./assets/fonts/TOMMY_Black.OTF);
+    font-family: "black";
+    src: url(./assets/fonts/TOMMY_Black.OTF);
 }
 @font-face {
-      font-family: "comfortaa";
-      src: url(./assets/fonts/comfortaa.TTF);
+    font-family: "comfortaa";
+    src: url(./assets/fonts/comfortaa.TTF);
 }
 @font-face {
-      font-family: "newyork";
-      src: url(./assets/fonts/NEWYORK\ PERSONAL\ USE.OTF);
+    font-family: Against;
+    src: url(./assets/fonts/AGAINST\ REGULAR.TTF);
 }
 
 * {
-      user-select: none;
-      scroll-behavior: smooth;
+    user-select: none;
+    scroll-behavior: smooth;
 }
 body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-            "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-            "Helvetica Neue", sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-      background: #121212;
-      background-image: radial-gradient(#dedede2c 1px, transparent 0);
-      background-size: 50px 50px;
-      background-position: -19px -19px;
+    background: #121212;
+    background-image: radial-gradient(#dedede1c 1px, transparent 0);
+    background-size: 50px 50px;
+    background-position: -19px -19px;
 }
 h2 {
-      letter-spacing: 1.1px;
-      transition: 0.2s ease-out;
-      font-size: 2.2em;
-      color: #dedede;
-      font-family: "newyork", cursive;
+    letter-spacing: 1.1px;
+    transition: 0.2s ease-out;
+    font-size: 2em;
+    color: #dedede;
+    font-weight: lighter;
+    font-family: Against;
 
-      & span {
-            font-family: "newyork", cursive;
-            font-weight: lighter;
-            color: #00b4f8;
-      }
+    & span {
+        color: #00b4f8;
+    }
 }
