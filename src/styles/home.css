@@ -104,6 +104,8 @@
     #home {
         & h2 {
             font-size: 1em;
+            text-align: center;
+            text-wrap: balance;
         }
 
         & .contact-text {
