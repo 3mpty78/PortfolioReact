@@ -55,7 +55,7 @@
         /* Cartes réseaux sociaux */
 
         & #socials {
-            width: 50%;
+            width: 30%;
             margin: 0;
             display: flex;
             flex-direction: row;
