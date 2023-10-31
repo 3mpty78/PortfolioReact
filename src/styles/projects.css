@@ -48,7 +48,7 @@
                 font-size: 28px;
                 font-weight: lighter;
                 color: transparent;
-                background: linear-gradient(to right, #dedede 25%, #e9ecef6c);
+                background: linear-gradient(to right, #dedede 25%, #e9ecef93);
                 background-clip: text;
             }
 
@@ -56,7 +56,7 @@
                 font-family: "comfortaa";
                 color: #e9ecef;
                 font-size: 18px;
-                text-align: justify;
+                text-align: left;
                 width: 60%;
                 line-height: 1.5;
             }

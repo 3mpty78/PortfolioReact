@@ -1,166 +1,166 @@
 #contact {
-      position: relative;
-      height: auto;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      padding: 50px 0;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 50px 0;
 
-      & #underline {
-            width: 0;
-            height: 1px;
+    & #underline {
+        width: 0;
+        height: 1px;
+        background: #e9ecef;
+        transition: 0.4s;
+    }
+
+    & button {
+        outline: none;
+        border: none;
+        background: transparent;
+        border: 1px solid #e9ecef;
+        border-radius: 5px;
+        padding: 10px 30px;
+        cursor: pointer;
+        margin: 50px 0;
+        transition: 0.2s ease-out;
+
+        color: #e9ecef;
+        font-family: "comfortaa";
+        font-size: 16px;
+        font-weight: lighter;
+
+        &:hover {
             background: #e9ecef;
-            transition: 0.4s;
-      }
+            color: #060606;
+        }
 
-      & button {
-            outline: none;
-            border: none;
-            background: transparent;
-            border: 1px solid #e9ecef;
-            border-radius: 5px;
-            padding: 10px 30px;
-            cursor: pointer;
-            margin: 50px 0;
-            transition: 0.2s ease-out;
+        &:active {
+            background: #bdbdbd;
+            transform: scale(0.95);
+        }
+    }
 
-            color: #e9ecef;
-            font-family: "comfortaa";
-            font-size: 16px;
-            font-weight: lighter;
+    &:hover #underline {
+        width: 15%;
+    }
 
-            &:hover {
-                  background: #e9ecef;
-                  color: #060606;
-            }
+    & .contactContainer {
+        margin-bottom: 50px;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
 
-            &:active {
-                  background: #bdbdbd;
-                  transform: scale(0.95);
-            }
-      }
+        /* Cartes réseaux sociaux */
 
-      &:hover #underline {
-            width: 25%;
-      }
-
-      & .contactContainer {
-            margin-bottom: 50px;
-            height: 50%;
-            width: 100%;
+        & #socials {
+            width: 50%;
+            margin: 0;
             display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-evenly;
 
-            /* Cartes réseaux sociaux */
+            & article {
+                position: relative;
+                display: flex;
+                align-items: center;
 
-            & #socials {
-                  width: 50%;
-                  margin: 0;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: space-evenly;
+                & a {
+                    text-decoration: none;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: #e9ecef;
+                    transition: 0.2s;
 
-                  & article {
-                        position: relative;
-                        display: flex;
-                        align-items: center;
-
-                        & a {
-                              text-decoration: none;
-                              width: 100%;
-                              display: flex;
-                              flex-direction: column;
-                              justify-content: center;
-                              align-items: center;
-                              color: #e9ecef;
-                              transition: 0.2s;
-
-                              & img {
-                                    width: 50px;
-                                    height: 50px;
-                                    object-fit: cover;
-                                    filter: invert(1);
-                              }
-                        }
-                  }
+                    & img {
+                        width: 50px;
+                        height: 50px;
+                        object-fit: cover;
+                        filter: invert(1);
+                    }
+                }
             }
-      }
+        }
+    }
 }
 
 /* Responsive */
 @media screen and (max-width: 900px) {
-      #contact {
-            & .contactContainer {
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
+    #contact {
+        & .contactContainer {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-                  & #socials {
-                        flex-direction: row;
-                        align-items: center;
-                        gap: 50px;
+            & #socials {
+                flex-direction: row;
+                align-items: center;
+                gap: 50px;
 
-                        & .insta {
-                              width: fit-content;
+                & .insta {
+                    width: fit-content;
 
-                              & img {
-                                    width: 30px;
-                                    height: 30px;
-                              }
+                    & img {
+                        width: 30px;
+                        height: 30px;
+                    }
 
-                              & .textWrap {
-                                    display: none;
-                              }
-                        }
-                        & .github {
-                              width: fit-content;
+                    & .textWrap {
+                        display: none;
+                    }
+                }
+                & .github {
+                    width: fit-content;
 
-                              & img {
-                                    width: 30px;
-                                    height: 30px;
-                              }
+                    & img {
+                        width: 30px;
+                        height: 30px;
+                    }
 
-                              & .textWrap {
-                                    display: none;
-                              }
-                        }
-                        & .linkedin {
-                              width: fit-content;
+                    & .textWrap {
+                        display: none;
+                    }
+                }
+                & .linkedin {
+                    width: fit-content;
 
-                              & img {
-                                    width: 30px;
-                                    height: 30px;
-                              }
+                    & img {
+                        width: 30px;
+                        height: 30px;
+                    }
 
-                              & .textWrap {
-                                    display: none;
-                              }
-                        }
-                  }
+                    & .textWrap {
+                        display: none;
+                    }
+                }
             }
-      }
+        }
+    }
 }
 
 /* Mobile */
 @media screen and (max-width: 750px) {
-      #contact {
-            & #underline {
-                  width: 75%;
+    #contact {
+        & #underline {
+            width: 75%;
+        }
+        &:hover #underline {
+            width: 75%;
+        }
+        & .contactContainer {
+            & form {
+                & label {
+                    width: 75%;
+                }
+                & input,
+                textarea {
+                    width: 75%;
+                }
             }
-            &:hover #underline {
-                  width: 75%;
-            }
-            & .contactContainer {
-                  & form {
-                        & label {
-                              width: 75%;
-                        }
-                        & input,
-                        textarea {
-                              width: 75%;
-                        }
-                  }
-            }
-      }
+        }
+    }
 }

@@ -1,76 +1,76 @@
 #skills {
-      position: relative;
-      height: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      & .banner-container {
-            background: #121212;
-            border-top: 1px solid #dedede5e;
-            border-bottom: 1px solid #dedede5e;
-            width: 100%;
-            margin: 0;
-            margin-top: 50px;
-            height: auto;
+    & .banner-container {
+        background: #121212;
+        border-top: 1px solid #dedede5e;
+        border-bottom: 1px solid #dedede5e;
+        width: 100%;
+        margin: 0;
+        margin-top: 100px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .banner {
+            height: 25%;
+            padding: 25px 0;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-items: center;
+            overflow: hidden;
 
-            .banner {
-                  height: 25%;
-                  padding: 25px 0;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  overflow: hidden;
+            & h3 {
+                margin: 0;
+                padding: 25px 0;
+                font-family: "black";
+                font-size: 30px;
+                color: #e9ecef;
 
-                  & h3 {
-                        margin: 0;
-                        padding: 25px 0;
-                        font-family: "black";
-                        font-size: 30px;
-                        color: #e9ecef;
-
-                        & span {
-                              text-transform: uppercase;
-                              color: transparent;
-                              -webkit-text-stroke: 2px #00b4f8;
-                        }
-                  }
-
-                  & article {
-                        padding: 10px;
-                        margin: 0 100px 0 0;
-                        display: flex;
-                        flex-wrap: nowrap;
-                        gap: 100px;
-
-                        & .tech {
-                              display: flex;
-                              align-items: center;
-                              justify-content: space-between;
-                              padding: 15px;
-                              gap: 15px;
-
-                              & img {
-                                    width: 30px;
-                                    filter: invert(1);
-                              }
-
-                              & p {
-                                    margin: 0;
-                                    padding: 0;
-                                    font-family: "comfortaa";
-                                    font-size: 18px;
-                                    color: #e9ecef;
-                              }
-                        }
-                  }
-
-                  & article::after {
-                        content: attr();
-                  }
+                & span {
+                    text-transform: uppercase;
+                    color: transparent;
+                    -webkit-text-stroke: 2px #00b4f8;
+                }
             }
-      }
+
+            & article {
+                padding: 10px;
+                margin: 0 100px 0 0;
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 100px;
+
+                & .tech {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 15px;
+                    gap: 15px;
+
+                    & img {
+                        width: 30px;
+                        filter: invert(1);
+                    }
+
+                    & p {
+                        margin: 0;
+                        padding: 0;
+                        font-family: "comfortaa";
+                        font-size: 18px;
+                        color: #e9ecef;
+                    }
+                }
+            }
+
+            & article::after {
+                content: attr();
+            }
+        }
+    }
 }

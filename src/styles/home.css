@@ -39,12 +39,12 @@
 
     & h2 {
         color: transparent;
-        background: linear-gradient(to right, #dedede 25%, #e9ecef6c);
+        background: linear-gradient(to right, #dedede 25%, #e9ecef93);
         background-clip: text;
 
         position: absolute;
         top: 75%;
-        font-family: Against;
+        font-family: Raleway;
         font-weight: lighter;
         font-size: 1.5em;
         left: unset;
